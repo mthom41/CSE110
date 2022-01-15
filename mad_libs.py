@@ -1,0 +1,10 @@
+print("Please input the following for a mad lib!")
+adj1 = input("Adjective: ")
+animal = input("Animal: ")
+verb1 = input("Verb: ")
+verb2 = input("Verb: ")
+exclamation = input("Exclamation: ")
+verb3 = input("Verb: ")
+
+print(f"\nThe other day I was really in trouble. It all started when I saw a very {adj1} {animal} {verb1} down the hallway. \"{exclamation}!\" I yelled.") 
+print(f"But all I could think to do was to {verb2} over and over. Miraculously, that caused it to stop, but not before it tried to {verb3} right in front of my family.")
