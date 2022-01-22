@@ -22,6 +22,11 @@ def checkpayment(message, req):
         return True
 
 # Get user input
+# 
+# I could be using ints for the amount of children and adults, but 
+# the way my number checking function works means it's just easier to 
+# keep everything as a float.
+
 print("Please input the following")
 kidmeal = num_input("Price of a children's meal: ")
 adultmeal = num_input("Price of an adult's meal: ")
