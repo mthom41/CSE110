@@ -18,7 +18,7 @@ def checkpayment(message, req):
         return checkpayment(message, req)
     else:
         print("Paid: $" + str("{:.2f}".format(pay)))
-        print("Change: $" + str("{:.2f}".format(pay-req))
+        print("Change: $" + str("{:.2f}".format(pay-req)))
         return True
 
 # Get user input
