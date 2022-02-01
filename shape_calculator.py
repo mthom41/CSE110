@@ -1,5 +1,5 @@
 import math
-# Define number checker
+# Define a function that ensures an input is a number, not any other character
 def check_input(num):
     try:
         num = float(num)
