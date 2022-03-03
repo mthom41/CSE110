@@ -58,4 +58,4 @@ while rept:
 
 print("Items: ")
 list_print(cart)
-print("Total: " + addlist(costs))
+print("Total: $" + str(addlist(costs)))
