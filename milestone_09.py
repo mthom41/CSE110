@@ -19,13 +19,20 @@ def addlist(list):
         list_total += i
     return list_total
 
-print("Welcome to your cart! Please add as many items as you want. Commands: 'done', 'remove' ")
+print("Welcome to your cart! Please add as many items as you want. \nCommands: 'done', 'remove', 'total', 'view' ")
 
 while rept:
     item = input("Item name: ")
     if item.lower() == "done":
         rept = False
         break
+    if item.lower() == "total":
+        print("Current total: " + str(addlist(costs)))
+        continue
+    if item.lower() == "view":
+        print("Current items: ")
+        list_print(cart)
+        continue
     if item.lower() == "remove":
         print("Cart: ")
         list_print(cart)
@@ -50,11 +57,6 @@ while rept:
     price = float(input("Price per item: "))
     price = price*quant  
     costs.append(price)
-    print(cart)
-    print(costs)   
-
-#loop_print(cart)
-#loop_print(costs)
 
 print("Items: ")
 list_print(cart)
